@@ -19,7 +19,6 @@ We're at Week 4 of 12 in Startup Studio. Tomorrow (Tuesday, February 10, c6w4) i
 This research serves three purposes:
 1. **Directly inform tomorrow's lecture** on user interviewing and low-fi prototyping
 2. **Provide a comprehensive reference** for students doing discovery work this semester
-3. **Ground Ken's reply to Elise Adreon** — articulating *why* discovery can't be skipped
 
 The timing is tight. Students need to know exactly what to do this week, not abstract theory.
 
@@ -38,7 +37,7 @@ The timing is tight. Students need to know exactly what to do this week, not abs
 
 ## 4. Executive Summary
 
-Pre-build validation is the single most important activity a startup team can do, and the one most often skipped. [42% of startups fail because there is no market need for their product](https://www.cbinsights.com/research/report/startup-failure-reasons-top/) — not because the technology didn't work, not because they ran out of money, but because nobody wanted what they built. This is the number one cause of startup death, and it's almost entirely preventable through systematic pre-build validation.
+Pre-build validation is the single most important activity a startup team can do, and the one most often skipped. [35% of startups fail because there is no market need for their product](https://www.cbinsights.com/research/report/startup-failure-reasons-top/) — not because the technology didn't work, not because they ran out of money, but because nobody wanted what they built. It's the #2 cause of startup death according to a CB Insights study from 2021 (behind running out of funding, which is often itself a consequence of weak market fit), and it's almost entirely preventable through systematic pre-build validation.
 
 The core insight across every major practitioner — Steve Blank, Rob Fitzpatrick, Eric Ries, Teresa Torres, Ash Maurya — is the same: **talk to people before you build things**. The frameworks differ in structure and emphasis, but they converge on a clear sequence: validate the *problem* first, then the *solution*, then *demand*, and only then commit to building. Most founders get this sequence wrong. [Engineering-driven teams build first. Marketing-driven teams wireframe first. Finance-driven teams demand ROI projections first.](https://davidrogersdigital.substack.com/p/the-four-stages-of-validation) All three skip the most important step: confirming that a real, painful problem exists for real people who will do something about it.
 
@@ -74,7 +73,7 @@ Confidence: **High** on the validation frameworks, sequencing, and practical rec
 
 ## 6. High-Level Takeaways
 
-- **42% of startups fail due to lack of market need** — and it's the #1 cause of failure. Pre-build validation exists specifically to prevent this. Source: [CB Insights](https://www.cbinsights.com/research/report/startup-failure-reasons-top/)
+- **35% of startups fail due to lack of market need** — the #2 cause of failure (behind running out of funding, which is often itself driven by weak market fit). Pre-build validation exists specifically to prevent this. Source: [CB Insights](https://www.cbinsights.com/research/report/startup-failure-reasons-top/)
 
 - **The validation sequence is: Problem → Solution → Demand → Build.** Every major framework agrees. Organizations consistently get it wrong by starting at the stage they're most comfortable with — engineers build, marketers wireframe, finance people demand spreadsheets. Source: [David Rogers](https://davidrogersdigital.substack.com/p/the-four-stages-of-validation)
 
@@ -104,10 +103,7 @@ Every major validation framework converges on the same fundamental sequence, tho
 
 ```mermaid
 graph LR
-    A["1. PROBLEM<br/>Does this problem<br/>exist and hurt?"] --> B["2. SOLUTION<br/>Does our approach<br/>resonate?"]
-    B --> C["3. DEMAND<br/>Will strangers<br/>show interest?"]
-    C --> D["4. BUILD<br/>Can we deliver<br/>value?"]
-
+    A[PROBLEM] --> B[SOLUTION] --> C[DEMAND] --> D[BUILD]
     style A fill:#fee2e2,stroke:#dc2626
     style B fill:#fef3c7,stroke:#d97706
     style C fill:#d1fae5,stroke:#059669
@@ -181,10 +177,10 @@ Not all validation evidence is created equal. [Strategyzer](https://www.strategy
 
 ```mermaid
 graph TB
-    A["💰 ACTUAL FINANCIAL COMMITMENT<br/>Pre-orders, deposits, purchases<br/><b>Strongest evidence</b>"]
-    B["🧪 MARKET EXPERIMENTS<br/>A/B tested price points, fake doors<br/>Very strong"]
-    C["📊 BEHAVIORAL DATA<br/>Signups, clicks, usage patterns<br/>Moderate"]
-    D["💬 STATED INTENTIONS<br/>Interviews, surveys, 'I would buy this'<br/><b>Weakest evidence</b>"]
+    A["ACTUAL FINANCIAL COMMITMENT: Pre-orders, deposits, purchases — Strongest evidence"]
+    B["MARKET EXPERIMENTS: A/B tested price points, fake doors — Very strong"]
+    C["BEHAVIORAL DATA: Signups, clicks, usage patterns — Moderate"]
+    D["STATED INTENTIONS: Interviews, surveys, 'I would buy this' — Weakest evidence"]
 
     A --> B --> C --> D
 
@@ -214,7 +210,7 @@ Source: [Sachin Rekhi](https://www.sachinrekhi.com/the-mom-test-rob-fitzpatrick)
 
 ### 7.4 How to Do Problem Interviews Right: The Mom Test
 
-Rob Fitzpatrick's [*The Mom Test*](https://www.momtestbook.com/) is the definitive guide to customer interviews, and it's the assigned reading for tomorrow's class. Here are the key principles:
+Rob Fitzpatrick's [*The Mom Test*](https://www.momtestbook.com/) is the definitive guide to customer interviews. Here are the key principles:
 
 **The Three Rules:**
 
@@ -504,12 +500,12 @@ Source: Adapted from [Customer Dev Labs](https://customerdevlabs.com/2013/11/05/
 
 ```mermaid
 graph TD
-    A["Week 4: Problem Interviews<br/>8-12 conversations"] --> B["Extract: problem language,<br/>pain points, audience definition"]
-    B --> C["Week 5: Vaporware Site<br/>Use interview language as copy"]
-    B --> D["Week 5: Wizard of Oz<br/>Simulate the solution manually"]
-    C --> E["Week 6: Paid Ad Campaign<br/>Test with strangers at scale"]
+    A["Week 4: Problem Interviews — 8-12 conversations"] --> B["Extract: problem language, pain points, audience definition"]
+    B --> C["Week 5: Vaporware Site — Use interview language as copy"]
+    B --> D["Week 5: Wizard of Oz — Simulate the solution manually"]
+    C --> E["Week 6: Paid Ad Campaign — Test with strangers at scale"]
     D --> E
-    E --> F["Week 7: MVP Build<br/>Build only what was validated"]
+    E --> F["Week 7: MVP Build — Build only what was validated"]
 
     style A fill:#fee2e2,stroke:#dc2626
     style B fill:#fef3c7,stroke:#d97706
